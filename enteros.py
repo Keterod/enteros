@@ -10,6 +10,10 @@ class Enteros:
             x, y = y, x % y
         return x
 
+    def mcm(self):
+        return int((self.a * self.b) / self.mcd())
+
 if __name__ == "__main__":
     numeros = Enteros(56, 98)
     print(f"MCD de 56 y 98: {numeros.mcd()}")  # Output: 14
+    print(f"MCM de 56 y 98: {numeros.mcm()}")
